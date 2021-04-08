@@ -13,6 +13,7 @@ dogApi.addEventListener('click', dogApi);
 
     //console.log('Dogs ran!')
 
+//Divider /////////
 
 const weatherButton = document.getElementById('weather');
 weatherButton.addEventListener('click', weatherButton);
@@ -35,7 +36,8 @@ temperature.addEventListener('click', temperature);
 const wind = document.getElementById('click', wind);
 wind.addEventListener('click', wind);
 
-const description = document.getElementById('click', description);
+const description = document.getElementById('description');
+description.addEventListener('click', description);
 
 
     //console.log('Weather ran!')
