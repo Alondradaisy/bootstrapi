@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 18px;
+    background-color: beige;
 }
 
 h1 {
@@ -25,3 +26,10 @@ h1 {
     color: #999;
 }
 
+.card {
+
+}
+
+.search-weather {
+    align-content: center;
+}

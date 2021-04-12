@@ -17,48 +17,69 @@
         <h1>
             Part 1: Random Dog Generator
         </h1>
-        <div class="api-content">
-            <button type="button" id="dog" type="button" class="btn btn-outline-primary">Give me random dogs!</button>
+        
+        <div class="api-content" style="width: 18rem;">
+            <div id="dog">
+                <button type="button" class="btn btn-outline-primary"> Show Me Random Dogs</button>
+            </div>
+            
+            <div class="dog-button">
+                <br></div>
+                <img id="dog-button-img" src="">
+            </div>
         </div>
-    </div>
-    
-    <div class="dog-button">
-        <br></div>
-        <img src="https://images.dog.ceo/breeds/terrier-wheaten/n02098105_2757.jpg">
-    </div>
-    
-    <div class="api-section">
-        <h1>
-            Part 2: Weather App
-        </h1>
-        <div class="api-content">
-            <button type="submit" id="weather" type="button" class="btn btn-outline-primary">Enter a city to check the weather</button>
+        <div class="part-2">   
+            <div class="api-section">
+                <h1>
+                    Part 2: Weather App
+                </h1>
+                <div class="api-content">
+                    
+                    
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            
+                            <p class="card-text">Enter a location to check the weather!</p>
+                            <input type="text" class="form-control form-control-sm" placeholder="Enter a city" id="city-info">
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">City Temperature</li>
+                            <div id="temperature">
+                                <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+                            </div>
+
+                            <li class="list-group-item">City Wind</li>
+                            <div id="wind">
+                                <input class="form-control form-control-sm" type="text" aria-label="default input example">
+                            </div>
+
+                            <li class="list-group-item">Description of Weather</li>
+                            <div id="description">
+                                <input class="form-control form-control-sm" type="text" aria-label=".form-control-lg example">
+                            </div>
+                            
+                            <br>
+
+                            <div class="search-weather">
+                                <button type="submit" id="weather" type="button" class="btn btn-outline-primary">Enter a city to check the weather</button>
+                            </div>
+                        </ul>
+
+                    </div>
+                    
+                    
+                    
+                    
+                    <form>
+                        <div class="weather-button"></div>
+                        <br>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-    </div>
-    <form>
-        <div class="weather-button"></div>
-        <br>
-        <input type="text" class="form-control form-control-sm" placeholder="Enter a city" id="city-info">
-    </div>
     
-    <div id="temperature">
-        <p>The temperature in this location is:</p>
-        <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
     </div>
-    
-    <div id="wind">
-        <p>Wind in this location:</p>
-        <input class="form-control form-control-sm" type="text" aria-label="default input example">
-    </div>
-    
-    <div id="description">
-        <p>Location description:</p>
-        <input class="form-control form-control-sm" type="text" aria-label=".form-control-lg example">
-    </div>
-</form>
-
-
-
 <script src="main.js"></script>
 </body>
 </html>
