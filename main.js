@@ -17,10 +17,6 @@
 //     })
 //     )})
     
-    
-    
-   
-    
 //     const weatherButton = document.getElementById('weather');
 //     weatherButton.addEventListener('click', function() {
 //     const cityInfo = document.getElementById('city-info').value;
@@ -63,7 +59,7 @@
         .then((function (json) {
             artistSearch.innerHTML = `The artist is: ${json.artist}`
             title.innerHTML = `The title is: ${json.title}`
-            
+            console.log(json);
         }))
     })
 
