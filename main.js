@@ -21,12 +21,12 @@ dogButton.addEventListener('click', function() {
     
     /// Divider /////////
     
-    const weatherButton = document.getElementById('weather-button');
+    const weatherButton = document.getElementById('weather');
     weatherButton.addEventListener('click', function() {
     const cityInfo = document.getElementById('city-info').value;
     const weatherApi = `https://goweather.herokuapp.com/weather/${cityInfo}`; //this holds the URL for weather api
     
-    const temperature = document.getElementById('temperature');
+    const temperature = document.getElementById('temperature'); 
     
     const wind = document.getElementById('wind');
 
@@ -37,6 +37,9 @@ dogButton.addEventListener('click', function() {
             return rawResponse.json();
         }))
         .then((function (json) {
-            cityInfo = json
+            //cityInfo = json
+            temperature.innerHTML = `Current temperature: ${json.temperature}`
+            wind.innerHTML = `${json.wind}`
+            description.innerHTML = `${json.description}`
         }))
     })

@@ -31,5 +31,7 @@ h1 {
 }
 
 .search-weather {
-    align-content: center;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
 }
